@@ -7,3 +7,27 @@ When a jammer is detected, a buzzer and LED alert are activated.
 Real-time status updates are provided by the LCD display.
 Blynk Integration: Uses the Blynk IoT platform to provide notifications.
 Remote Reset: Using the Blynk app, users can remotely reset the device.
+
+
+Components Required
+
+ESP32 Development Board,
+LiquidCrystal I2C LCD (16x2),
+Buzzer,
+LEDs (Red & Green),
+Wi-Fi Network,
+Blynk App (for remote monitoring)
+
+
+How It Works
+
+Monitors Wi-Fi Networks: Scans available SSIDs every 5 seconds.
+Detects Disconnection: Triggers an alert if the ESP32 loses connection unexpectedly.
+Detects Spoofing (Beacon Attack): Flags duplicate SSIDs appearing multiple times.
+
+Future Improvements
+
+Triggers Alerts: If a jammer or spoofing attack is detected, it triggers a buzzer, LED, and a Blynk notification.
+Adding support for GSM-based alerts (SMS notifications),
+Data logging for historical attack analysis,
+Integration with a mobile app for enhanced monitoring.Contributing,
